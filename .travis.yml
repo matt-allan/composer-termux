@@ -1,0 +1,10 @@
+script: make
+deploy:
+  provider: releases
+  api_key:
+    secure: hSx9L3r1dTaVRxvLb3HwbIHGjgE3Hsfo/a2k9n6eFMu2Pf9UcYEoOeR5EF1ctsQ/cq1ifO2GTSrWiGXWvP7n9frS2rABXuilgVSOzb1bliA5KZQAcTvPiTmtlKfMnfeGNBFxmdaMrCcon5jpd2jV2yFHhcpfDn5MYHHJtwm2nb85MiEtHVGkm/oLwloWAFcb8kl+5ONTv774cYCMhEHIIKyecg+15fY3vMbYsL/aIsCh/3a7XscvN7gIIoVo0/tm2stRkXfDUX8dC8nHYweWsUsLfpfVZwTouwIe42XS6Jt1nZsfHL8YhAo95t7RFoX+SXYvOnn95/H8VzG3Evuzbt0YrqxrkChuk2GOD/bXVU4ZHu85SR9hxuoKGSVNCrOkyAjPMIc4u0TWcosKAku3eJwDOLMoXFF0+uB7H8NsVEhJu0ZZcqyxAcucAJy/rdSxnALkdirHuFsdspb3e0nNLvlZ5i7ntap3vKNiOQbv6yCLRYF/fVt3wqmZVLB2m627gi2n0l5nahnuFjWF6s7PI8xGlV9/YR4sxHp2eZ5NL0eP+j4ELQXnIRDMurV+aZGFFRNuNy1T8a9GqxQ0a60wR+Fry17z4gPoext/9c6cXkp4cNb/57MsCupdRbeAjb5EZzK6KYCOghsQBwcLs5InBkwlnNKFC0/hzteASDL1e9M=
+  file: composer/composer.phar
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
