@@ -18,9 +18,15 @@ $ mv ./composer.phar /data/data/com.termux/files/usr/bin/composer
 
 ## Usage
 
+### Composer scripts
+
 Any bin scripts you install (phpunit, psysh, etc) will need to be patched to work with Termux.  You can just run `termux-fix-shebang <my-file>` to rewrite the path.  Here's an example:
 
 ```bash
 $ composer global require psy/psysh
 $ termux-fix-shebang ~/.composer/vendor/bin/psysh
 ```
+
+### Updating
+
+If you run `composer update` composer will no longer work.
