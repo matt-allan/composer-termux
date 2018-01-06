@@ -30,3 +30,10 @@ $ termux-fix-shebang ~/.composer/vendor/bin/psysh
 ### Updating
 
 If you run `composer update` composer will no longer work.
+
+## Release Process
+
+- bump the version in `build.sh`, commit and push
+- Tag a release that matches the composer version. i.e. `git tag -a -m '1.6.2 release' 1.6.2`
+- Push the tags - `git push origin --tags`
+- Travis CI will build the new release and push it to github.
