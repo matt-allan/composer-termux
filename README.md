@@ -11,7 +11,7 @@ This repo builds the latest version of composer and publishes a release.  You ca
 ## Installation
 
 ```bash
-$ curl -L https://github.com/yuloh/composer-termux/releases/download/0.0.1/composer.phar -o composer.phar
+$ curl -L https://github.com/yuloh/composer-termux/releases/download/1.6.2/composer.phar -o composer.phar
 $ chmod +x ./composer.phar
 $ mv ./composer.phar /data/data/com.termux/files/usr/bin/composer
 ```
